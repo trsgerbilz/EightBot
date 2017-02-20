@@ -129,5 +129,5 @@ async def insult(*args):
     insults = insultsFile.readlines()
     await eight.say(insults[random.randrange(len(insults))])"""
 
-eight.run("MjgxNTQ4MDE0NzM1MDY1MDg5.C4ZjtQ.W73BxNmo9OKq6FIFmC6IsjRvXmE")
+eight.run("{TOKEN}")
 
