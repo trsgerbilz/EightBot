@@ -21,6 +21,7 @@ async def on_message(message):
     if message.author == eight.user:
         return #stops him responding to himself
     
+    #TODO: Stop him spamming
     #elif message.content.startswith('o/'):
     #    await eight.send_message(message.channel, '\o') #waves back
     #    await asyncio.sleep(60)
@@ -56,7 +57,7 @@ async def fiteme(*args):
         
 @eight.command()
 async def dance(*args):
-    '''Fance animation'''
+    '''Dance animation'''
     frames =["┏(°.°)┛","┗(°.°)┓","┗(°.°)┛","┏(°.°)┓","┏(°.°)┛","┏( °.°)┛","┏(°.°)┛","┏( °.°)┛","┏(°.°)┛"]
     msg = await eight.say(frames[0])
     await asyncio.sleep(.01)
@@ -66,7 +67,7 @@ async def dance(*args):
         
         
         
-        
+#TODO revamp this into command/ subcommands
 @eight.command()
 async def colours(*args):
     '''list of role colours, yes its spelt with a u you imperial bastards'''
